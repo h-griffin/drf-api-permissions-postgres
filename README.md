@@ -13,12 +13,12 @@ Use poetry to initialize folder
 
 > $ cd `drf-api-poermissions-postgres` 
 > $ poetry init -n 
-> $ poetry add django 
+> $ poetry add django djangorestframework 
 > $ poetry add --dev black 
 > $ poetry shell 
 
 > $ django-admin startproject library_api_project .
-> $ python manage.py startapp trees
+> $ python manage.py startapp books
 
 **Dockerfile**
 **docker-compose.yml**
