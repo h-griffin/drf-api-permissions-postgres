@@ -1,4 +1,26 @@
   
+# version: '3'
+
+# services:
+#   web:
+#     build: .
+#     command: python manage.py runserver 0.0.0.0:8000
+#     volumes:
+#       - .:/code
+#     ports:
+#       - "8001:8000"
+#     depends_on: 
+#       - db
+
+#   db:
+#     image: postgres:11
+#     environment: 
+#       POSTGRES_PASSWORD: postgres
+
+
+
+
+#default
 version: '3'
 
 services:
@@ -9,9 +31,3 @@ services:
       - .:/code
     ports:
       - "8001:8000"
-    depends_on: 
-      - db
-      
-  db:
-    image: postgres:11
-
