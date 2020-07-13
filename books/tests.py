@@ -20,6 +20,7 @@ class BooksModelTests(TestCase):
     def test_blog_content(self):
         book = Book.objects.get(id=1)
 
-        self.assertEqual(str(book.author), 'tester')
         self.assertEqual(book.title, 'Title of Book')
+        self.assertEqual(str(book.author), 'tester')
         self.assertEqual(book.description, 'Words about the book')
+        
